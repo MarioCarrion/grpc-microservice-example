@@ -9,7 +9,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :uuid, :string, 1, json_name: "uuid"
       optional :full_name, :string, 2, json_name: "fullName"
       optional :birth_year, :int64, 3, json_name: "birthYear"
-      optional :salary, :uint32, 4, json_name: "salary"
+      proto3_optional :salary, :uint32, 4, json_name: "salary"
       repeated :addresses, :message, 5, "user.v1.Address", json_name: "addresses"
       optional :marital_status, :enum, 6, "user.v1.MaritalStatus", json_name: "maritalStatus"
     end

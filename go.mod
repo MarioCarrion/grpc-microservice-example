@@ -1,4 +1,4 @@
-module github.com/MarioCarrion/videos/2022/02/24
+module github.com/MarioCarrion/grpc-microservice-example
 
 go 1.17
 

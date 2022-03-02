@@ -8,7 +8,7 @@ message User {
   string           uuid           = 1;
   string           full_name      = 2;
   int64            birth_year     = 3;
-  uint32           salary         = 4;
+  optional uint32  salary         = 4;
   repeated Address addresses      = 5;
   MaritalStatus    marital_status = 6;
 }
