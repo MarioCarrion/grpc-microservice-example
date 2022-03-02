@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package user.v1;
 
-option go_package = "github.com/MarioCarrion/videos/2022/02/24/gen/go/user/v1;userpb";
+option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/user/v1;userpb";
 
 message User {
   string           uuid           = 1;
