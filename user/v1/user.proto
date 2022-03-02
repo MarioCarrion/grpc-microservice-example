@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package user.v1;
+
+option go_package = "github.com/MarioCarrion/videos/2022/02/24/gen/go/user/v1;userpb";
+
+message User {
+  string           uuid           = 1;
+  string           full_name      = 2;
+  int64            birth_year     = 3;
+  uint32           salary         = 4;
+  repeated Address addresses      = 5;
+  MaritalStatus    marital_status = 6;
+}
+
+message Address {
+  string street = 1;
+  string city   = 2;
+}
+
+enum MaritalStatus {
+  MARITAL_STATUS_UNSPECIFIED = 0;
+  MARITAL_STATUS_SINGLE      = 1;
+  MARITAL_STATUS_MARRIED     = 2;
+}
