@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package user.v1;
+
+option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/user/v1;userpb";
+
+import "user/v1/user.proto";
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse) {};
+}
+
+message GetUserRequest {
+  string uuid = 1;
+}
+
+message GetUserResponse {
+  User user = 1;
+}

@@ -25,6 +25,8 @@ Install the following tools:
     * `go install github.com/bufbuild/buf/cmd/buf@v1.0.0`
 * **required** Protocol Buffer Plugin for Go:
     * `go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27.1`
+* **required** gRPC Plugin for Go:
+    * `go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2.0`
 * **recommended** Code Formatting, `clang-format`, you can use `find . -name '*.proto' | xargs clang-format -i`
     * Homebrew: `brew install clang-format` (`13.0.1` to date version):
     * Alpine 3.15: `apk add clang-extra-tools`
