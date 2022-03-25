@@ -31,3 +31,5 @@ Install the following tools:
     * Homebrew: `brew install clang-format` (`13.0.1` to date version):
     * Alpine 3.15: `apk add clang-extra-tools`
     * Ubuntu 21.10: `apt-get install clang-format`
+* **recommended** gRPC Health Check tester using `grpc-health-probe`:
+    * `go install github.com/grpc-ecosystem/grpc-health-probe@v0.4.8`
