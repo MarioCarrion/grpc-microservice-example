@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package wearable.v1;
+
+option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/wearable/v1;wearablepb";
+
+service WearableService {
+  rpc BeatsPerMinute(BeatsPerMinuteRequest) returns (stream BeatsPerMinuteResponse) {};
+}
+
+message BeatsPerMinuteRequest {
+  string uuid = 1;
+}
+
+message BeatsPerMinuteResponse {
+  uint32 value  = 1;
+  uint32 minute = 2;
+}

@@ -11,6 +11,7 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 
 	userpb "github.com/MarioCarrion/grpc-microservice-example/gen/go/user/v1"
+	wearablepb "github.com/MarioCarrion/grpc-microservice-example/gen/go/wearable/v1"
 )
 
 type userService struct {
@@ -34,6 +35,7 @@ func main() {
 
 	grpcServer := grpc.NewServer()
 	userServer := &userService{}
+	wearableServer := &wearableService{}
 
 	healthServer := health.NewServer()
 
@@ -57,6 +59,7 @@ func main() {
 
 	userpb.RegisterUserServiceServer(grpcServer, userServer)
 	healthpb.RegisterHealthServer(grpcServer, healthServer)
+	wearablepb.RegisterWearableServiceServer(grpcServer, wearableServer)
 
 	grpcServer.Serve(lis)
 }
