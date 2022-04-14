@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"io"
 	"math/rand"
 	"time"
 
@@ -31,5 +33,25 @@ func (w *wearableService) BeatsPerMinute(
 				return status.Error(codes.Canceled, "Stream has ended")
 			}
 		}
+	}
+}
+
+func (w *wearableService) ConsumeBeatsPerMinute(stream wearablepb.WearableService_ConsumeBeatsPerMinuteServer) error {
+	var total uint32
+
+	for {
+		value, err := stream.Recv()
+		if err == io.EOF {
+			return stream.SendAndClose(&wearablepb.ConsumeBeatsPerMinuteResponse{
+				Total: total,
+			})
+		}
+
+		if err != nil {
+			return err
+		}
+
+		fmt.Println(value.GetUuid(), value.GetMinute(), value.GetValue())
+		total++
 	}
 }
