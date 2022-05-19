@@ -1,0 +1,24 @@
+linters:
+  enable-all: true
+
+  disable:
+    - goerr113
+    - gofumpt    # Prefer `gofmt` rules / some rules conflict with `wsl`
+    # The following are deprecated linters, added to avoid intial warning when running
+    - golint
+    - interfacer
+    - maligned
+    - scopelint
+
+linters-settings:
+  lll:
+    line-length: 130
+  gci:
+    no-inline-comments: true
+    no-prefix-comments: true
+    sections:
+      - standard
+      - default
+      - prefix(github.com/MarioCarrion/grpc-microservice-example)
+    section-separators:
+      - newLine
