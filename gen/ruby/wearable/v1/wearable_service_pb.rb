@@ -20,6 +20,14 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
     add_message "wearable.v1.ConsumeBeatsPerMinuteResponse" do
       optional :total, :uint32, 1, json_name: "total"
     end
+    add_message "wearable.v1.CalculateBeatsPerMinuteRequest" do
+      optional :uuid, :string, 1, json_name: "uuid"
+      optional :value, :uint32, 2, json_name: "value"
+      optional :minute, :uint32, 3, json_name: "minute"
+    end
+    add_message "wearable.v1.CalculateBeatsPerMinuteResponse" do
+      optional :average, :float, 1, json_name: "average"
+    end
   end
 end
 
@@ -29,5 +37,7 @@ module Wearable
     BeatsPerMinuteResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("wearable.v1.BeatsPerMinuteResponse").msgclass
     ConsumeBeatsPerMinuteRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("wearable.v1.ConsumeBeatsPerMinuteRequest").msgclass
     ConsumeBeatsPerMinuteResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("wearable.v1.ConsumeBeatsPerMinuteResponse").msgclass
+    CalculateBeatsPerMinuteRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("wearable.v1.CalculateBeatsPerMinuteRequest").msgclass
+    CalculateBeatsPerMinuteResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("wearable.v1.CalculateBeatsPerMinuteResponse").msgclass
   end
 end

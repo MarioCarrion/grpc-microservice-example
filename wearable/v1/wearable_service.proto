@@ -7,6 +7,7 @@ option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/we
 service WearableService {
   rpc BeatsPerMinute(BeatsPerMinuteRequest) returns (stream BeatsPerMinuteResponse) {};
   rpc ConsumeBeatsPerMinute(stream ConsumeBeatsPerMinuteRequest) returns (ConsumeBeatsPerMinuteResponse) {};
+  rpc CalculateBeatsPerMinute(stream CalculateBeatsPerMinuteRequest) returns (stream CalculateBeatsPerMinuteResponse);
 }
 
 message BeatsPerMinuteRequest {
@@ -26,4 +27,14 @@ message ConsumeBeatsPerMinuteRequest {
 
 message ConsumeBeatsPerMinuteResponse {
   uint32 total = 1;
+}
+
+message CalculateBeatsPerMinuteRequest {
+  string uuid   = 1;
+  uint32 value  = 2;
+  uint32 minute = 3;
+}
+
+message CalculateBeatsPerMinuteResponse {
+  float average = 1;
 }
