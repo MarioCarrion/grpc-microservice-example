@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/gizak/termui/v3 v3.1.0
-	google.golang.org/grpc v1.48.0
+	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1
 )
 
