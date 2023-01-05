@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"io"
-	"math/rand"
-	"time"
 
 	wearablepb "github.com/MarioCarrion/grpc-microservice-example/gen/go/wearable/v1"
 	"google.golang.org/grpc/codes"
@@ -18,22 +16,25 @@ type wearableService struct {
 func (w *wearableService) BeatsPerMinute(
 	req *wearablepb.BeatsPerMinuteRequest,
 	stream wearablepb.WearableService_BeatsPerMinuteServer) error {
-	for {
+	results := []uint32{5, 10, 15, 20, 25}
+
+	for i := 0; i < len(results); i++ {
 		select {
 		case <-stream.Context().Done():
 			return status.Error(codes.Canceled, "Stream has ended")
 		default:
-			time.Sleep(1 * time.Second)
-			value := 30 + rand.Int31n(80)
+			value := results[i]
 
 			if err := stream.SendMsg(&wearablepb.BeatsPerMinuteResponse{
-				Value:  uint32(value),
-				Minute: uint32(time.Now().Second()),
+				Value:  uint32(value + 30),
+				Minute: uint32(value),
 			}); err != nil {
 				return status.Error(codes.Canceled, "Stream has ended")
 			}
 		}
 	}
+
+	return nil
 }
 
 func (w *wearableService) ConsumeBeatsPerMinute(stream wearablepb.WearableService_ConsumeBeatsPerMinuteServer) error {
