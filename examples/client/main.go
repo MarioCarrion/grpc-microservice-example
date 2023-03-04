@@ -13,6 +13,7 @@ import (
 func main() {
 	opts := []grpc.DialOption{
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
+		grpc.WithUnaryInterceptor(UnaryClientInterceptor),
 	}
 
 	conn, err := grpc.Dial("localhost:9879", opts...)

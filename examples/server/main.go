@@ -34,7 +34,10 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	grpcServer := grpc.NewServer()
+	grpcServer := grpc.NewServer(
+		grpc.UnaryInterceptor(UnaryServerInterceptor),
+		grpc.StreamInterceptor(StreamServerInterceptor),
+	)
 	userServer := &userService{}
 	wearableServer := &wearableService{}
 
