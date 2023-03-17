@@ -4,6 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "gomod"
+    directory: "/tools/internal/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: 'bundler'
+    directory: "/examples/interoperability/reader/"
+    schedule:
+    interval: "weekly"
   # Github Actions
   - package-ecosystem: "github-actions"
     directory: "/"

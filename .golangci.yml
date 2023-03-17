@@ -4,11 +4,17 @@ linters:
   disable:
     - goerr113
     - gofumpt    # Prefer `gofmt` rules / some rules conflict with `wsl`
-    # The following are deprecated linters, added to avoid intial warning when running
+    # Deprecated linters, removes warning when running
+    - deadcode
+    - exhaustivestruct
     - golint
+    - ifshort
     - interfacer
     - maligned
+    - nosnakecase
     - scopelint
+    - structcheck
+    - varcheck
 
 linters-settings:
   lll:
