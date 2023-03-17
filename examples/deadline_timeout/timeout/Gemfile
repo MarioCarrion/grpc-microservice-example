@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'google-protobuf', '>= 3.22.2'
+gem 'grpc', '>= 1.52.0'
+
+gem 'solargraph', group: :development

@@ -1,5 +1,7 @@
 # Documentation: https://docs.buf.build/configuration/v1/buf-gen-yaml
 version: v1
+managed:
+  enabled: true
 plugins:
   - name: go # Synonym with: protoc-gen-<name>
     out: gen/go
@@ -7,5 +9,7 @@ plugins:
   - name: go-grpc
     out: gen/go
     opt: paths=source_relative
-  - name: ruby
+  - plugin: buf.build/grpc/ruby
+    out: gen/ruby
+  - plugin: buf.build/protocolbuffers/ruby
     out: gen/ruby

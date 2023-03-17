@@ -19,7 +19,9 @@ type userService struct {
 	userpb.UnimplementedUserServiceServer
 }
 
-func (u *userService) GetUser(_ context.Context, req *userpb.GetUserRequest) (*userpb.GetUserResponse, error) {
+func (u *userService) GetUser(ctx context.Context, req *userpb.GetUserRequest) (*userpb.GetUserResponse, error) {
+	time.Sleep(3 * time.Second)
+
 	return &userpb.GetUserResponse{
 		User: &userpb.User{
 			Uuid:     req.Uuid,
