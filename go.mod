@@ -1,6 +1,6 @@
 module github.com/MarioCarrion/grpc-microservice-example
 
-go 1.20
+go 1.21
 
 require (
 	github.com/gizak/termui/v3 v3.1.0
