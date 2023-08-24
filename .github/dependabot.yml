@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "gomod"
-    directory: "/tools/internal/"
+    directory: "/internal/tools/"
     schedule:
       interval: "weekly"
   - package-ecosystem: 'bundler'
