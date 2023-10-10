@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/bufbuild/buf v1.27.0
 	github.com/golangci/golangci-lint v1.54.2
-	github.com/grpc-ecosystem/grpc-health-probe v0.4.19
+	github.com/grpc-ecosystem/grpc-health-probe v0.4.20
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.3.0
 	google.golang.org/protobuf v1.31.0
 )
@@ -223,8 +223,8 @@ require (
 	golang.org/x/term v0.12.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/tools v0.13.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230530153820-e85fd2cbaebc // indirect
-	google.golang.org/grpc v1.55.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20231002182017-d307bd883b97 // indirect
+	google.golang.org/grpc v1.58.2 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
