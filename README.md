@@ -25,4 +25,4 @@ Make sure the following tools are installed:
     * Homebrew: `brew install clang-format` (`16.0.6`, version to date):
     * Alpine 3.17: `apk add clang-extra-tools`
     * Ubuntu 21.10: `apt-get install clang-format`
-* The run `make tools` or if don't have Makefile copy/paste the `go install` instructions defined in the [`Makefile#L1`]
+* The run `make tools` or if don't have Makefile copy/paste the `go install` instructions defined in the [Makefile](`Makefile#L1`)
