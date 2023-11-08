@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package wearable.v1;
 
-option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/wearable/v1;wearablepb";
-
 service WearableService {
   rpc BeatsPerMinute(BeatsPerMinuteRequest) returns (stream BeatsPerMinuteResponse) {};
   rpc ConsumeBeatsPerMinute(stream ConsumeBeatsPerMinuteRequest) returns (ConsumeBeatsPerMinuteResponse) {};

@@ -2,13 +2,13 @@ syntax = "proto3";
 
 package user.v1;
 
-option go_package = "github.com/MarioCarrion/grpc-microservice-example/gen/go/user/v1;userpb";
+import "buf/validate/validate.proto";
 
 message User {
   string           uuid           = 1;
-  string           full_name      = 2;
-  int64            birth_year     = 3;
-  optional uint32  salary         = 4;
+  string           full_name      = 2 [(buf.validate.field).string.min_len = 1];
+  int64            birth_year     = 3 [(buf.validate.field).int64.gt = 1900];
+  optional uint32  salary         = 4 [(buf.validate.field).uint32.gt = 0];
   repeated Address addresses      = 5;
   MaritalStatus    marital_status = 6;
 }

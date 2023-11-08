@@ -7,7 +7,7 @@ require 'google/protobuf'
 require 'user/v1/user_pb'
 
 
-descriptor_data = "\n\x1auser/v1/user_service.proto\x12\x07user.v1\x1a\x12user/v1/user.proto\"$\n\x0eGetUserRequest\x12\x12\n\x04uuid\x18\x01 \x01(\tR\x04uuid\"4\n\x0fGetUserResponse\x12!\n\x04user\x18\x01 \x01(\x0b\x32\r.user.v1.UserR\x04user2M\n\x0bUserService\x12>\n\x07GetUser\x12\x17.user.v1.GetUserRequest\x1a\x18.user.v1.GetUserResponse\"\x00\x42\xa5\x01\n\x0b\x63om.user.v1B\x10UserServiceProtoP\x01ZGgithub.com/MarioCarrion/grpc-microservice-example/gen/go/user/v1;userpb\xa2\x02\x03UXX\xaa\x02\x07User.V1\xca\x02\x07User\\V1\xe2\x02\x13User\\V1\\GPBMetadata\xea\x02\x08User::V1b\x06proto3"
+descriptor_data = "\n\x1auser/v1/user_service.proto\x12\x07user.v1\x1a\x12user/v1/user.proto\"$\n\x0eGetUserRequest\x12\x12\n\x04uuid\x18\x01 \x01(\tR\x04uuid\"4\n\x0fGetUserResponse\x12!\n\x04user\x18\x01 \x01(\x0b\x32\r.user.v1.UserR\x04user2M\n\x0bUserService\x12>\n\x07GetUser\x12\x17.user.v1.GetUserRequest\x1a\x18.user.v1.GetUserResponse\"\x00\x42l\n\x0b\x63om.user.v1B\x10UserServiceProtoP\x01Z\x0euser/v1;userv1\xa2\x02\x03UXX\xaa\x02\x07User.V1\xca\x02\x07User\\V1\xe2\x02\x13User\\V1\\GPBMetadata\xea\x02\x08User::V1b\x06proto3"
 
 pool = Google::Protobuf::DescriptorPool.generated_pool
 

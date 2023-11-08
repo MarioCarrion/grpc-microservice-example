@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: wearable/v1/wearable_service.proto
 
-package wearablepb
+package wearablev1
 
 import (
 	context "context"

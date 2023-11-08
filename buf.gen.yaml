@@ -2,6 +2,10 @@
 version: v1
 managed:
   enabled: true
+  go_package_prefix:
+    default: .
+    except:
+      - buf.build/bufbuild/protovalidate
 plugins:
   - name: go # Synonym with: protoc-gen-<name>
     out: gen/go
