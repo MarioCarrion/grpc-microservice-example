@@ -3,7 +3,7 @@ module github.com/MarioCarrion/grpc-microservice-example
 go 1.21
 
 require (
-	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.31.0-20231030212536-12f9cba37c9d.2
+	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.31.0-20231106192134-1baebb0a1518.2
 	github.com/bufbuild/protovalidate-go v0.4.0
 	github.com/gizak/termui/v3 v3.1.0
 	google.golang.org/grpc v1.59.0
