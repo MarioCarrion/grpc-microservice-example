@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/bufbuild/buf v1.28.1
 	github.com/golangci/golangci-lint v1.55.2
-	github.com/grpc-ecosystem/grpc-health-probe v0.4.22
+	github.com/grpc-ecosystem/grpc-health-probe v0.4.23
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.3.0
 	google.golang.org/protobuf v1.31.1-0.20231027082548-f4a6c1f6e5c1
 )
@@ -75,7 +75,7 @@ require (
 	github.com/ghostiam/protogetter v0.2.3 // indirect
 	github.com/go-chi/chi/v5 v5.0.10 // indirect
 	github.com/go-critic/go-critic v0.9.0 // indirect
-	github.com/go-jose/go-jose/v3 v3.0.0 // indirect
+	github.com/go-jose/go-jose/v3 v3.0.1 // indirect
 	github.com/go-logr/logr v1.3.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-toolsmith/astcast v1.1.0 // indirect
