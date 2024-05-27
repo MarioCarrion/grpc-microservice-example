@@ -4,11 +4,14 @@ GEM
     ast (2.4.2)
     backport (1.2.0)
     benchmark (0.3.0)
+    bigdecimal (3.1.8)
     diff-lcs (1.5.0)
     e2mmap (0.1.0)
-    google-protobuf (4.26.1-x86_64-darwin)
+    google-protobuf (4.27.0-x86_64-darwin)
+      bigdecimal
       rake (>= 13)
-    google-protobuf (4.26.1-x86_64-linux)
+    google-protobuf (4.27.0-x86_64-linux)
+      bigdecimal
       rake (>= 13)
     jaro_winkler (1.5.6)
     json (2.7.1)
@@ -27,7 +30,7 @@ GEM
       racc
     racc (1.7.3)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (13.2.1)
     rbs (2.8.4)
     regexp_parser (2.8.3)
     reverse_markdown (2.1.1)
