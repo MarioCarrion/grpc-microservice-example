@@ -366,8 +366,8 @@ github.com/gostaticanalysis/testutil v0.4.0 h1:nhdCmubdmDF6VEatUNjgUZBJKWRqugoIS
 github.com/gostaticanalysis/testutil v0.4.0/go.mod h1:bLIoPefWXrRi/ssLFWX1dx7Repi5x3CuviD3dgAZaBU=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0 h1:bkypFPDjIYGfCYD5mRBvpqxfYX1YCS1PXdKYWi8FsN0=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0/go.mod h1:P+Lt/0by1T8bfcF3z737NnSbmxQAppXMRziHUxPOC8k=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.26 h1:HamwpC3NdDPSdvECJa9SOdMcWkI0J0pARbHM2jxIBCA=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.26/go.mod h1:kqvL5gTsMFB7YwNY64NiaJFDYRZdYhfv2Weg5zCS06o=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.29 h1:/nSXyZXiiOKWBO1C2YHh1PnSdlph3VZ9wIJ52T/qheY=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.29/go.mod h1:Dd3NNxqiDvq9ecjdOxXpMqajduTZsvvXfbPgptkGQIE=
 github.com/hashicorp/go-version v1.2.1/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
 github.com/hashicorp/go-version v1.7.0 h1:5tqGy27NaOTB8yJKUZELlFAS/LTKJkrmONwQKeRZfjY=
 github.com/hashicorp/go-version v1.7.0/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09ZGVZPK5anwXA=
