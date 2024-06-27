@@ -8,28 +8,7 @@ require 'google/protobuf'
 descriptor_data = "\n\"wearable/v1/wearable_service.proto\x12\x0bwearable.v1\"+\n\x15\x42\x65\x61tsPerMinuteRequest\x12\x12\n\x04uuid\x18\x01 \x01(\tR\x04uuid\"F\n\x16\x42\x65\x61tsPerMinuteResponse\x12\x14\n\x05value\x18\x01 \x01(\rR\x05value\x12\x16\n\x06minute\x18\x02 \x01(\rR\x06minute\"`\n\x1c\x43onsumeBeatsPerMinuteRequest\x12\x12\n\x04uuid\x18\x01 \x01(\tR\x04uuid\x12\x14\n\x05value\x18\x02 \x01(\rR\x05value\x12\x16\n\x06minute\x18\x03 \x01(\rR\x06minute\"5\n\x1d\x43onsumeBeatsPerMinuteResponse\x12\x14\n\x05total\x18\x01 \x01(\rR\x05total\"b\n\x1e\x43\x61lculateBeatsPerMinuteRequest\x12\x12\n\x04uuid\x18\x01 \x01(\tR\x04uuid\x12\x14\n\x05value\x18\x02 \x01(\rR\x05value\x12\x16\n\x06minute\x18\x03 \x01(\rR\x06minute\";\n\x1f\x43\x61lculateBeatsPerMinuteResponse\x12\x18\n\x07\x61verage\x18\x01 \x01(\x02R\x07\x61verage2\xde\x02\n\x0fWearableService\x12]\n\x0e\x42\x65\x61tsPerMinute\x12\".wearable.v1.BeatsPerMinuteRequest\x1a#.wearable.v1.BeatsPerMinuteResponse\"\x00\x30\x01\x12r\n\x15\x43onsumeBeatsPerMinute\x12).wearable.v1.ConsumeBeatsPerMinuteRequest\x1a*.wearable.v1.ConsumeBeatsPerMinuteResponse\"\x00(\x01\x12x\n\x17\x43\x61lculateBeatsPerMinute\x12+.wearable.v1.CalculateBeatsPerMinuteRequest\x1a,.wearable.v1.CalculateBeatsPerMinuteResponse(\x01\x30\x01\x42\x8c\x01\n\x0f\x63om.wearable.v1B\x14WearableServiceProtoP\x01Z\x16wearable/v1;wearablev1\xa2\x02\x03WXX\xaa\x02\x0bWearable.V1\xca\x02\x0bWearable\\V1\xe2\x02\x17Wearable\\V1\\GPBMetadata\xea\x02\x0cWearable::V1b\x06proto3"
 
 pool = Google::Protobuf::DescriptorPool.generated_pool
-
-begin
-  pool.add_serialized_file(descriptor_data)
-rescue TypeError
-  # Compatibility code: will be removed in the next major version.
-  require 'google/protobuf/descriptor_pb'
-  parsed = Google::Protobuf::FileDescriptorProto.decode(descriptor_data)
-  parsed.clear_dependency
-  serialized = parsed.class.encode(parsed)
-  file = pool.add_serialized_file(serialized)
-  warn "Warning: Protobuf detected an import path issue while loading generated file #{__FILE__}"
-  imports = [
-  ]
-  imports.each do |type_name, expected_filename|
-    import_file = pool.lookup(type_name).file_descriptor
-    if import_file.name != expected_filename
-      warn "- #{file.name} imports #{expected_filename}, but that import was loaded as #{import_file.name}"
-    end
-  end
-  warn "Each proto file must use a consistent fully-qualified name."
-  warn "This will become an error in the next major version."
-end
+pool.add_serialized_file(descriptor_data)
 
 module Wearable
   module V1
