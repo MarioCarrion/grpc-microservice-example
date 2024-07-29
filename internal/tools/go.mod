@@ -7,7 +7,7 @@ require (
 	github.com/bufbuild/buf v1.34.0
 	github.com/golangci/golangci-lint v1.59.1
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.30
-	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.4.0
+	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.0
 	google.golang.org/protobuf v1.34.2
 )
 
