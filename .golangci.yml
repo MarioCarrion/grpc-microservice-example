@@ -1,13 +1,11 @@
 linters:
   enable-all: true
-
   disable:
     - err113
     - gofumpt # Prefer `gofmt` rules / some rules conflict with `wsl`
     # Deprecated linters, removes warning when running
     - execinquery
     - gomnd
-
 linters-settings:
   lll:
     line-length: 130

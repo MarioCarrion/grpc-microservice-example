@@ -1,26 +1,30 @@
-lint: tools generate bufgenerate golangci govulncheck vet dirty
+.PHONY: all
+all: lint test
 
+.PHONY: tidy
+tidy:
+	go mod tidy
+	go mod -C internal/tools tidy
+
+.PHONY: tools
 tools:
 	go install -C internal/tools \
 		github.com/bufbuild/buf/cmd/buf \
 		github.com/golangci/golangci-lint/cmd/golangci-lint \
+		github.com/google/yamlfmt/cmd/yamlfmt \
 		github.com/grpc-ecosystem/grpc-health-probe \
 		golang.org/x/vuln/cmd/govulncheck \
 		google.golang.org/grpc/cmd/protoc-gen-go-grpc \
 		google.golang.org/protobuf/cmd/protoc-gen-go
 
-generate:
-	go generate ./...
+# Formatting
 
-bufgenerate:
-	buf generate
+.PHONY: fmt
+fmt:
+	go fmt ./...
+	yamlfmt .
 
-golangci:
-	golangci-lint run ./...
-
-govulncheck:
-	govulncheck ./...
-
+.PHONY: dirty
 dirty:
 	@status=$$(git status --untracked-files=no --porcelain); \
 	if [ ! -z "$${status}" ]; \
@@ -30,8 +34,28 @@ dirty:
 		exit 1; \
 	fi
 
-vet:
+# Generate
+
+.PHONY: generate
+generate:
+	go generate ./...
+	buf generate
+
+# Lint
+
+.PHONY: lint
+lint: tidy tools fmt security
+	golangci-lint run ./...
 	go vet ./...
 
+# Security
+
+.PHONY: security
+security: 
+	govulncheck ./...
+
+# Test
+
+.PHONY: test
 test:
 	go test -shuffle=on -race -coverprofile=coverage.txt -covermode=atomic $$(go list ./... | grep -v /cmd/)
