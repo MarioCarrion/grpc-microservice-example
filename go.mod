@@ -1,7 +1,8 @@
 module github.com/MarioCarrion/grpc-microservice-example
 
-go 1.22
-toolchain go1.22.9
+go 1.22.7
+
+toolchain go1.23.2
 
 require (
 	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.35.1-20240920164238-5a7b106cbb87.1
