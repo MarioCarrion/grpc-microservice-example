@@ -11,7 +11,7 @@ require (
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.35
 	golang.org/x/vuln v1.1.3
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
-	google.golang.org/protobuf v1.35.1
+	google.golang.org/protobuf v1.35.2
 )
 
 require (
