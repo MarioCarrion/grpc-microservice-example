@@ -4,7 +4,7 @@ go 1.23.0
 toolchain go1.24.1
 
 require (
-	github.com/bufbuild/buf v1.52.0
+	github.com/bufbuild/buf v1.52.1
 	github.com/golangci/golangci-lint v1.64.8
 	github.com/google/yamlfmt v0.16.0
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.37
