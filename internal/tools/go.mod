@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	github.com/bufbuild/buf v1.54.0
 	github.com/golangci/golangci-lint v1.64.8
-	github.com/google/yamlfmt v0.16.0
+	github.com/google/yamlfmt v0.17.0
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.38
 	golang.org/x/vuln v1.1.4
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
@@ -58,7 +58,6 @@ require (
 	github.com/blizzy78/varnamelen v0.8.0 // indirect
 	github.com/bmatcuk/doublestar/v4 v4.8.1 // indirect
 	github.com/bombsimon/wsl/v4 v4.5.0 // indirect
-	github.com/braydonk/yaml v0.9.0 // indirect
 	github.com/breml/bidichk v0.3.2 // indirect
 	github.com/breml/errchkjson v0.4.0 // indirect
 	github.com/bufbuild/protocompile v0.14.1 // indirect
