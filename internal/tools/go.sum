@@ -254,8 +254,8 @@ github.com/google/renameio v0.1.0 h1:GOZbcHa3HfsPKPlmyPyN2KEohoMXOhdMbHrvbpl2QaA
 github.com/google/renameio v0.1.0/go.mod h1:KWCgfxg9yswjAJkECMjeO8J8rahYeXnNhOm40UhjYkI=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/google/yamlfmt v0.17.1 h1:NgKi21+MUVntxhPhIsstylN6QNCCfDv3wKNKwlm/3Hs=
-github.com/google/yamlfmt v0.17.1/go.mod h1:gs0UEklJOYkUJ+OOCG0hg9n+DzucKDPlJElTUasVNK8=
+github.com/google/yamlfmt v0.17.2 h1:TkXxhmj7dnpmOnlWGOXog92Gs6MWcTZqnf3kuyp8yFQ=
+github.com/google/yamlfmt v0.17.2/go.mod h1:gs0UEklJOYkUJ+OOCG0hg9n+DzucKDPlJElTUasVNK8=
 github.com/gordonklaus/ineffassign v0.1.0 h1:y2Gd/9I7MdY1oEIt+n+rowjBNDcLQq3RsH5hwJd0f9s=
 github.com/gordonklaus/ineffassign v0.1.0/go.mod h1:Qcp2HIAYhR7mNUVSIxZww3Guk4it82ghYcEXIAk+QT0=
 github.com/gostaticanalysis/analysisutil v0.7.1 h1:ZMCjoue3DtDWQ5WyU16YbjbQEQ3VuzwxALrpYd+HeKk=
