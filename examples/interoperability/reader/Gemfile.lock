@@ -56,7 +56,7 @@ GEM
       parser (>= 3.3.7.2)
       prism (~> 1.4)
     ruby-progressbar (1.13.0)
-    solargraph (0.55.2)
+    solargraph (0.55.4)
       backport (~> 1.2)
       benchmark (~> 0.4)
       bundler (~> 2.0)
