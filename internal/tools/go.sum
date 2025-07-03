@@ -273,8 +273,8 @@ github.com/gostaticanalysis/testutil v0.5.0 h1:Dq4wT1DdTwTGCQQv3rl3IvD5Ld0E6HiY+
 github.com/gostaticanalysis/testutil v0.5.0/go.mod h1:OLQSbuM6zw2EvCcXTz1lVq5unyoNft372msDY0nY5Hs=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0 h1:bkypFPDjIYGfCYD5mRBvpqxfYX1YCS1PXdKYWi8FsN0=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0/go.mod h1:P+Lt/0by1T8bfcF3z737NnSbmxQAppXMRziHUxPOC8k=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.38 h1:hUiJRxeGDdKlFLjvdDe5zXsQL6kLjGxSjZCw2OERZwQ=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.38/go.mod h1:rqlqf1Iv6FOZnQktXyJSVAkXmP3MUnA3dWPCslD/+5E=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.39 h1:VHq7cgXihbKBxbFFT6p5ZptPNE1GOvDeStqQOa4024Y=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.39/go.mod h1:+O7ckBlpWY8Hmipaa6GNF12tGuxS5guN1DBYJcGdpE4=
 github.com/hashicorp/go-immutable-radix/v2 v2.1.0 h1:CUW5RYIcysz+D3B+l1mDeXrQ7fUvGGCwJfdASSzbrfo=
 github.com/hashicorp/go-immutable-radix/v2 v2.1.0/go.mod h1:hgdqLXA4f6NIjRVisM1TJ9aOJVNRqKZj+xDGF6m7PBw=
 github.com/hashicorp/go-uuid v1.0.3 h1:2gKiV6YVmrJ1i2CKKa9obLvRieoRGviZFL26PcT/Co8=
