@@ -7,7 +7,7 @@ require (
 	github.com/bufbuild/protovalidate-go v0.10.0
 	github.com/gizak/termui/v3 v3.1.0
 	google.golang.org/grpc v1.74.2
-	google.golang.org/protobuf v1.36.6
+	google.golang.org/protobuf v1.36.7
 )
 
 require (
