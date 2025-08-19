@@ -4,12 +4,12 @@ GEM
     ast (2.4.3)
     backport (1.2.0)
     benchmark (0.4.1)
-    bigdecimal (3.2.1)
+    bigdecimal (3.2.2)
     diff-lcs (1.6.2)
-    google-protobuf (4.31.1-x86_64-darwin)
+    google-protobuf (4.32.0-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-gnu)
+    google-protobuf (4.32.0-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     jaro_winkler (1.6.1)
