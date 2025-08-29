@@ -273,8 +273,8 @@ github.com/gostaticanalysis/testutil v0.5.0 h1:Dq4wT1DdTwTGCQQv3rl3IvD5Ld0E6HiY+
 github.com/gostaticanalysis/testutil v0.5.0/go.mod h1:OLQSbuM6zw2EvCcXTz1lVq5unyoNft372msDY0nY5Hs=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0 h1:bkypFPDjIYGfCYD5mRBvpqxfYX1YCS1PXdKYWi8FsN0=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0/go.mod h1:P+Lt/0by1T8bfcF3z737NnSbmxQAppXMRziHUxPOC8k=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.39 h1:VHq7cgXihbKBxbFFT6p5ZptPNE1GOvDeStqQOa4024Y=
-github.com/grpc-ecosystem/grpc-health-probe v0.4.39/go.mod h1:+O7ckBlpWY8Hmipaa6GNF12tGuxS5guN1DBYJcGdpE4=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.40 h1:Lr1E28yjpR3D1V42tNDjrFB0Vk+4X0TCDSVfiWXo008=
+github.com/grpc-ecosystem/grpc-health-probe v0.4.40/go.mod h1:qP6bjrKrR9n8fKY8wSqcTcPZpchwcog4jTcIPOsqvVY=
 github.com/hashicorp/go-immutable-radix/v2 v2.1.0 h1:CUW5RYIcysz+D3B+l1mDeXrQ7fUvGGCwJfdASSzbrfo=
 github.com/hashicorp/go-immutable-radix/v2 v2.1.0/go.mod h1:hgdqLXA4f6NIjRVisM1TJ9aOJVNRqKZj+xDGF6m7PBw=
 github.com/hashicorp/go-uuid v1.0.3 h1:2gKiV6YVmrJ1i2CKKa9obLvRieoRGviZFL26PcT/Co8=
@@ -754,8 +754,8 @@ google.golang.org/genproto/googleapis/api v0.0.0-20250728155136-f173205681a0 h1:
 google.golang.org/genproto/googleapis/api v0.0.0-20250728155136-f173205681a0/go.mod h1:8ytArBbtOy2xfht+y2fqKd5DRDJRUQhqbyEnQ4bDChs=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20250728155136-f173205681a0 h1:MAKi5q709QWfnkkpNQ0M12hYJ1+e8qYVDyowc4U1XZM=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20250728155136-f173205681a0/go.mod h1:qQ0YXyHHx3XkvlzUtpXDkS29lDSafHMZBAZDc03LQ3A=
-google.golang.org/grpc v1.72.2 h1:TdbGzwb82ty4OusHWepvFWGLgIbNo1/SUynEN0ssqv8=
-google.golang.org/grpc v1.72.2/go.mod h1:wH5Aktxcg25y1I3w7H69nHfXdOG3UiadoBtjh3izSDM=
+google.golang.org/grpc v1.74.2 h1:WoosgB65DlWVC9FqI82dGsZhWFNBSLjQ84bjROOpMu4=
+google.golang.org/grpc v1.74.2/go.mod h1:CtQ+BGjaAIXHs/5YS3i473GqwBBa1zGQNevxdeBEXrM=
 google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1 h1:F29+wU6Ee6qgu9TddPgooOdaqsxTMunOoj8KA5yuS5A=
 google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1/go.mod h1:5KF+wpkbTSbGcR9zteSqZV6fqFOWBl4Yde8En8MryZA=
 google.golang.org/protobuf v1.36.8 h1:xHScyCOEuuwZEc6UtSOvPbAT4zRh0xcNRYekJwfqyMc=
