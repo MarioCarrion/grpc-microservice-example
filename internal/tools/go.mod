@@ -5,7 +5,7 @@ go 1.25
 require (
 	github.com/bufbuild/buf v1.58.0
 	github.com/golangci/golangci-lint v1.64.8
-	github.com/google/yamlfmt v0.17.2
+	github.com/google/yamlfmt v0.19.0
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.41
 	golang.org/x/vuln v1.1.4
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
