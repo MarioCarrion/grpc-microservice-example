@@ -6,10 +6,10 @@ GEM
     benchmark (0.4.1)
     bigdecimal (3.3.1)
     diff-lcs (1.6.2)
-    google-protobuf (4.33.0-x86_64-darwin)
+    google-protobuf (4.33.1-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.33.0-x86_64-linux-gnu)
+    google-protobuf (4.33.1-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     jaro_winkler (1.6.1)
@@ -34,7 +34,7 @@ GEM
     prism (1.5.1)
     racc (1.8.1)
     rainbow (3.1.1)
-    rake (13.3.0)
+    rake (13.3.1)
     rbs (3.9.5)
       logger
     regexp_parser (2.11.3)
