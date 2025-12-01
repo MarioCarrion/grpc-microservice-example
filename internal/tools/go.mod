@@ -8,7 +8,7 @@ require (
 	github.com/google/yamlfmt v0.20.0
 	github.com/grpc-ecosystem/grpc-health-probe v0.4.42
 	golang.org/x/vuln v1.1.4
-	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1
+	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.6.0
 	google.golang.org/protobuf v1.36.10
 )
 
