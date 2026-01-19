@@ -6,7 +6,7 @@ require (
 	github.com/bufbuild/buf v1.63.0
 	github.com/golangci/golangci-lint v1.64.8
 	github.com/google/yamlfmt v0.21.0
-	github.com/grpc-ecosystem/grpc-health-probe v0.4.43
+	github.com/grpc-ecosystem/grpc-health-probe v0.4.44
 	golang.org/x/vuln v1.1.4
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.6.0
 	google.golang.org/protobuf v1.36.11
