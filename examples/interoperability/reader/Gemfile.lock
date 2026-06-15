@@ -6,10 +6,10 @@ GEM
     benchmark (0.5.0)
     bigdecimal (4.1.2)
     diff-lcs (1.6.2)
-    google-protobuf (4.35.0-x86_64-darwin)
+    google-protobuf (4.35.1-x86_64-darwin)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.0-x86_64-linux-gnu)
+    google-protobuf (4.35.1-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
     jaro_winkler (1.7.0)
