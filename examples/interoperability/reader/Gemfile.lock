@@ -7,7 +7,9 @@ GEM
     bigdecimal (4.1.2)
     commander (5.0.0)
       highline (~> 3.0.0)
+    date (3.5.1)
     diff-lcs (1.6.2)
+    erb (6.0.4)
     google-protobuf (4.35.1-x86_64-darwin)
       bigdecimal
       rake (~> 13.3)
@@ -16,7 +18,7 @@ GEM
       rake (~> 13.3)
     highline (3.0.1)
     jaro_winkler (1.7.0)
-    json (2.19.9)
+    json (2.20.0)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     kramdown-parser-gfm (1.1.0)
@@ -41,12 +43,19 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.9.0)
+    psych (5.4.0)
+      date
+      stringio
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.4.2)
     rbs (4.0.3)
       logger
       prism (>= 1.6.0)
+      tsort
+    rdoc (7.2.0)
+      erb
+      psych (>= 4.0.0)
       tsort
     regexp_parser (2.12.0)
     reverse_markdown (3.0.2)
@@ -67,7 +76,7 @@ GEM
       parser (>= 3.3.7.2)
       prism (~> 1.7)
     ruby-progressbar (1.13.0)
-    solargraph (0.60.1)
+    solargraph (0.60.2)
       ast (~> 2.4.3)
       backport (~> 1.2)
       benchmark (~> 0.4)
@@ -83,6 +92,7 @@ GEM
       parser (~> 3.0)
       prism (~> 1.4)
       rbs (>= 3.10.0)
+      rdoc (~> 7.0)
       reverse_markdown (~> 3.0)
       rubocop (~> 1.76)
       sord (~> 7.0)
@@ -91,7 +101,7 @@ GEM
       yard (~> 0.9, >= 0.9.24)
       yard-activesupport-concern (~> 0.0)
       yard-solargraph (~> 0.1)
-    sorbet-runtime (0.6.13309)
+    sorbet-runtime (0.6.13320)
     sord (7.1.0)
       commander (~> 5.0)
       parlour (~> 9.1)
@@ -99,6 +109,7 @@ GEM
       rbs (>= 3.0, < 5)
       sorbet-runtime
       yard
+    stringio (3.2.0)
     thor (1.5.0)
     tilt (2.7.0)
     tsort (0.2.0)
