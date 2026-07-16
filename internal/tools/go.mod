@@ -6,7 +6,7 @@ require (
 	github.com/bufbuild/buf v1.71.0
 	github.com/golangci/golangci-lint v1.64.8
 	github.com/google/yamlfmt v0.21.0
-	github.com/grpc-ecosystem/grpc-health-probe v0.4.52
+	github.com/grpc-ecosystem/grpc-health-probe v0.4.53
 	golang.org/x/vuln v1.6.0
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.6.2
 	google.golang.org/protobuf v1.36.11
@@ -214,7 +214,7 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spf13/viper v1.12.0 // indirect
-	github.com/spiffe/go-spiffe/v2 v2.6.0 // indirect
+	github.com/spiffe/go-spiffe/v2 v2.8.1 // indirect
 	github.com/ssgreg/nlreturn/v2 v2.2.1 // indirect
 	github.com/stbenjam/no-sprintf-host-port v0.2.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
