@@ -10,10 +10,10 @@ GEM
     date (3.5.1)
     diff-lcs (1.6.2)
     erb (6.0.7)
-    google-protobuf (4.35.1-x86_64-darwin)
+    google-protobuf (4.36.0-x86_64-darwin)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.35.1-x86_64-linux-gnu)
+    google-protobuf (4.36.0-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
     highline (3.0.1)
