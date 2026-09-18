@@ -1,6 +1,6 @@
 module github.com/MarioCarrion/grpc-microservice-example/internal/tools
 
-go 1.25.10
+go 1.27.1
 
 require (
 	github.com/bufbuild/buf v1.71.0
